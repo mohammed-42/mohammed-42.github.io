@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brtuer — Full-Stack Developer</title>
+<meta name="description" content="Full-stack developer (Node.js, React, MongoDB, PostgreSQL) based in Bengaluru. Projects, skills and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f3;--card:#fff;--text:#1d2320;--muted:#5d6862;--accent:#2f7d5b;--accent-soft:#e3f1ea;--line:#e4e1d8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101412;--card:#171d1a;--text:#eaf0ec;--muted:#98a59d;--accent:#5fc596;--accent-soft:#1c2a24;--line:#26312b}}
+:root[data-theme="dark"]{--bg:#101412;--card:#171d1a;--text:#eaf0ec;--muted:#98a59d;--accent:#5fc596;--accent-soft:#1c2a24;--line:#26312b}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.6}
+a{color:inherit}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+nav b{font-weight:800;letter-spacing:-.02em}
+nav div a{margin-left:18px;text-decoration:none;color:var(--muted);font-size:14px;font-weight:500}
+nav div a:hover{color:var(--accent)}
+.hero{padding:56px 0 40px}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:13px;font-weight:700;padding:4px 12px;border-radius:99px}
+h1{font-size:clamp(34px,7vw,58px);line-height:1.1;letter-spacing:-.035em;margin:18px 0 14px;font-weight:800}
+h1 span{color:var(--accent)}
+.hero p{max-width:600px;color:var(--muted);font-size:18px;margin:0 0 26px}
+.btns a{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;margin:0 10px 10px 0;border:1px solid var(--line)}
+.btns a.p{background:var(--accent);border-color:var(--accent);color:#fff}
+section{padding:38px 0}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:18px;letter-spacing:-.01em}
+.card p{margin:0 0 12px;color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:12px;font-weight:600;background:var(--accent-soft);color:var(--accent);padding:3px 10px;border-radius:99px}
+.card a.l{font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;display:inline-block;margin-top:12px}
+.st{font-size:11px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:1px 8px;margin-left:6px;vertical-align:middle}
+.row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.row small{color:var(--muted)}
+.skills .card p{margin:0}
+footer{padding:40px 0 60px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Brtuer</b><div><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<span class="tag">Open to internships &amp; full-time roles</span>
+<h1>Hi, I'm Brtuer.<br>I build <span>full-stack</span> products.</h1>
+<p>Final-year B.Tech CSE student in Bengaluru. I ship end-to-end apps with Node.js, React and databases, and I like adding AI where it actually saves someone time.</p>
+<div class="btns"><a class="p" href="#projects">See my work</a><a href="https://github.com/mohammed-42" target="_blank" rel="noopener">GitHub</a></div>
+</header>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card"><h3>AI Resume Builder</h3>
+<p>Turns raw career details into a polished resume. Gemini returns structured JSON, which is mapped to an HTML template and exported as a PDF with Puppeteer.</p>
+<div class="chips"><span>React</span><span>Tailwind</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Gemini API</span><span>Puppeteer</span></div>
+<a class="l" href="https://github.com/mohammed-42/ai-resume-builder" target="_blank" rel="noopener">View code →</a></div>
+
+<div class="card"><h3>Debt &amp; EMI Manager</h3>
+<p>Tracks loans, EMIs and credit cards in one place. Handles penalties, prepayment recalculation, and daily reminder and overdue emails. Per-device sessions with refresh tokens.</p>
+<div class="chips"><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Prisma</span><span>node-cron</span><span>JWT</span></div>
+<a class="l" href="https://github.com/mohammed-42/debt-manager" target="_blank" rel="noopener">View code →</a></div>
+
+<div class="card"><h3>AI Job Application Agent<span class="st">In progress</span></h3>
+<p>Multi-agent pipeline: a Parser reads the job description, a Match agent scores your resume against it, and a Writer drafts a tailored cover letter and resume bullets.</p>
+<div class="chips"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Gemini API</span><span>Multi-agent</span></div></div>
+
+<div class="card"><h3>Chai Tube — Video Platform</h3>
+<p>Full-stack video platform with uploads, likes, comments, playlists, subscriptions and a creator dashboard. Backend is Dockerized.</p>
+<div class="chips"><span>React</span><span>Vite</span><span>Node.js</span><span>MongoDB</span><span>Cloudinary</span><span>Docker</span></div>
+<a class="l" href="https://github.com/mohammed-42/chaiaurbackend" target="_blank" rel="noopener">View code →</a></div>
+
+<div class="card"><h3>Threat Detection System<span class="st">B.Tech major project</span></h3>
+<p>Multi-agent cybersecurity threat detection based on a 2025 IEEE Access paper, extended with Gemini analysis, a React/D3 analyst dashboard, PDF incident reports and a Dockerized honeypot. Team of four.</p>
+<div class="chips"><span>React</span><span>D3.js</span><span>Gemini API</span><span>Puppeteer</span><span>Docker</span></div></div>
+</div>
+</section>
+
+<section id="skills" class="skills">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card"><h3>Frontend</h3><p>React, Vite, Tailwind CSS, D3.js, HTML/CSS, JavaScript</p></div>
+<div class="card"><h3>Backend</h3><p>Node.js, Express, REST APIs, JWT auth, cron jobs, Postman testing</p></div>
+<div class="card"><h3>Databases</h3><p>MongoDB (Mongoose), PostgreSQL (Prisma), schema design</p></div>
+<div class="card"><h3>Tools &amp; AI</h3><p>Git/GitHub, Docker, Cloudinary, Gemini API, Puppeteer</p></div>
+</div>
+</section>
+
+<section id="about">
+<h2>About</h2>
+<div class="grid">
+<div class="card"><div class="row"><h3>Full Stack Developer Intern</h3></div><p style="margin:0">Accolade Tech Solutions. Worked on full-stack web development.</p></div>
+<div class="card"><h3>B.Tech, Computer Science Engineering</h3><p style="margin:0">Srinivas University Institute of Engineering and Technology<br>Graduating March 2027 · CGPA 8.28</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p style="margin:0 0 14px;font-size:17px;color:var(--text)">Looking for a developer who ships? Let's talk.</p>
+<div class="btns"><a class="p" href="https://github.com/mohammed-42" target="_blank" rel="noopener">github.com/mohammed-42</a></div>
+</div>
+</section>
+
+<footer>© <span id="y"></span> Brtuer · Bengaluru, India</footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
