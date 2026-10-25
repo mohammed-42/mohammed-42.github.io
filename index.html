@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohammed Mustafa — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Mohammed Mustafa, full-stack developer in Bengaluru. Debt Manager, VedioTube, Library App, AI Study Assistant and AI Resume Builder.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#faf6ee;--paper:#fffdf8;--ink:#23291f;--muted:#6b7064;--line:#e8e1d2;--green:#3e7a5a;--green-soft:#e6f0e8;--sand:#f1eadb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;margin:0;letter-spacing:-.015em}
+nav{position:sticky;top:0;z-index:10;background:rgba(250,246,238,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-family:'Fraunces';font-weight:700;font-size:20px}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+nav ul a{font-size:14px;color:var(--muted);font-weight:500}
+nav ul a:hover{color:var(--green)}
+.hero{padding:90px 0 70px}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:50px;align-items:center}
+.pill{display:inline-block;background:var(--green-soft);color:var(--green);font-size:13px;font-weight:600;padding:5px 14px;border-radius:99px}
+h1{font-size:clamp(40px,6.5vw,66px);line-height:1.06;margin:20px 0 16px}
+h1 em{color:var(--green);font-style:italic}
+.lead{color:var(--muted);font-size:18px;max-width:520px;margin:0 0 28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;font-size:15px;margin:0 10px 10px 0;border:1px solid var(--ink);transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--ink);color:var(--cream)}
+.me{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 14px 40px rgba(60,50,20,.08)}
+.avatar{width:84px;height:84px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fraunces';font-size:34px;font-weight:700;margin-bottom:16px}
+.me h3{font-size:22px}
+.me p{margin:2px 0 14px;color:var(--muted);font-size:14px}
+.me ul{list-style:none;padding:0;margin:0;font-size:14px}
+.me li{padding:8px 0;border-top:1px solid var(--line)}
+.me li b{color:var(--green)}
+section{padding:70px 0}
+.alt{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.eyebrow{color:var(--green);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+h2{font-size:clamp(28px,4vw,38px);margin-bottom:32px}
+.projects{display:grid;gap:26px}
+.proj{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:30px;display:grid;grid-template-columns:70px 1fr;gap:22px;transition:.25s}
+.proj:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(60,50,20,.1);border-color:#d9cfb8}
+.num{font-family:'Fraunces';font-size:46px;font-weight:600;color:#d8ccb0;line-height:1}
+.proj h3{font-size:24px;margin-bottom:4px}
+.kind{color:var(--green);font-size:13px;font-weight:600;margin-bottom:10px}
+.proj p{margin:0 0 12px;color:#4a5043}
+.proj ul{margin:0 0 14px;padding-left:18px;color:#4a5043;font-size:15px}
+.proj li{margin-bottom:3px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.chips span{font-size:12px;font-weight:500;background:var(--sand);color:#5a5140;border-radius:99px;padding:3px 11px}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links a{font-size:13.5px;font-weight:600;border:1px solid var(--green);color:var(--green);border-radius:8px;padding:5px 14px;transition:.2s}
+.links a:hover{background:var(--green);color:#fff}
+.links a.live{background:var(--green);color:#fff}
+.tag{font-family:'Inter';font-size:11px;font-weight:600;background:var(--sand);color:#7a6f55;border-radius:99px;padding:2px 9px;margin-left:8px;vertical-align:middle}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.sk{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:22px}
+.sk h3{font-size:18px;margin-bottom:12px}
+.sk div{display:flex;flex-wrap:wrap;gap:7px}
+.sk span{font-size:13px;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:3px 11px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px}
+.box h3{font-size:20px;margin-bottom:2px}
+.box small{color:var(--green);font-weight:600}
+.box ul{margin:12px 0 0;padding-left:18px;color:#4a5043;font-size:15px}
+.box p{margin:10px 0 0;color:#4a5043;font-size:15px}
+.contact{text-align:center;background:var(--green);color:#fff;border-radius:26px;padding:60px 22px}
+.contact h2{margin-bottom:12px}
+.contact p{opacity:.9;max-width:460px;margin:0 auto 26px}
+.contact .btn{border-color:#fff;color:#fff}
+.contact .btn.p{background:#fff;color:var(--green)}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:34px 0}
+.rv{opacity:0;transform:translateY(20px);transition:.7s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:800px){.hero .wrap,.two{grid-template-columns:1fr}.hero{padding-top:56px}.proj{grid-template-columns:1fr;gap:6px;padding:24px}.num{font-size:34px}nav ul{gap:16px}}
+@media(max-width:520px){nav ul li:nth-child(n+4){display:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">Mohammed Mustafa</a>
+<ul><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div>
+<span class="pill">Open to internships &amp; full-time roles</span>
+<h1>Hi, I'm Mohammed Mustafa.<br>I build <em>full-stack</em> products.</h1>
+<p class="lead">Final-year Computer Science student in Bengaluru. I design databases, build REST APIs and ship React front ends, and I add AI where it genuinely helps users.</p>
+<a class="btn p" href="#projects">View my projects</a><a class="btn" href="#contact">Get in touch</a>
+</div>
+<div class="me"><div class="avatar">M</div><h3>Mohammed Mustafa</h3><p>Full-Stack Developer · Bengaluru</p>
+<ul><li><b>Stack</b> &nbsp;Node.js, React, PostgreSQL, MongoDB</li><li><b>Focus</b> &nbsp;REST APIs, auth, Docker, AI apps</li><li><b>Education</b> &nbsp;B.Tech CSE, 2027</li></ul></div>
+</div></header>
+
+<section id="projects" class="alt"><div class="wrap">
+<div class="eyebrow">Selected work</div><h2>Projects</h2>
+<div class="projects">
+
+<article class="proj rv"><div class="num">01</div><div>
+<h3>Debt Manager</h3><div class="kind">Full-stack web app · Live</div>
+<p>One place to track loans, EMIs and credit cards, with reminders so payments and penalties never sneak up on you.</p>
+<ul><li>Email-verified sign-up, JWT access tokens with refresh-token cookies and per-device sessions (log out one device or all).</li>
+<li>Payments with on-time, late and partial status, automatic penalties, and prepayment choice (reduce tenure or EMI) in a single transaction.</li>
+<li>Daily reminder and overdue emails through a node-cron job.</li></ul>
+<div class="chips"><span>React</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>JWT</span><span>node-cron</span><span>Render</span><span>Vercel</span></div>
+<div class="links"><a class="live" href="https://debt-manager-mu.vercel.app" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/mohammed-42/frontend-debit" target="_blank" rel="noopener">Frontend code</a><a href="https://github.com/mohammed-42/debt-manager" target="_blank" rel="noopener">Backend code</a></div>
+</div></article>
+
+<article class="proj rv"><div class="num">02</div><div>
+<h3>VedioTube</h3><div class="kind">Video streaming platform backend</div>
+<p>A complete REST API for a YouTube-style platform, containerized with Docker.</p>
+<ul><li>Modules for users, videos, likes, comments, playlists, subscriptions, tweets and a creator dashboard.</li>
+<li>JWT-protected routes and MongoDB aggregation pipelines for subscribers, watch history and channel stats.</li>
+<li>Video and image uploads with Multer and Cloudinary; every endpoint tested in Postman.</li></ul>
+<div class="chips"><span>Node.js</span><span>Express</span><span>MongoDB Atlas</span><span>Mongoose</span><span>Cloudinary</span><span>Docker</span></div>
+<div class="links"><a href="https://github.com/mohammed-42/vediotube" target="_blank" rel="noopener">View code</a></div>
+</div></article>
+
+<article class="proj rv"><div class="num">03</div><div>
+<h3>Library App</h3><div class="kind">Microservices web application</div>
+<p>A library system split into independent services behind an API gateway, started together with Docker Compose.</p>
+<ul><li>Separate user, book, rental and notification services, plus an API gateway and a frontend.</li>
+<li>Built during my Full Stack Developer internship at Accolade Tech Solutions.</li></ul>
+<div class="chips"><span>Microservices</span><span>REST APIs</span><span>API Gateway</span><span>Docker Compose</span><span>JavaScript</span></div>
+<div class="links"><a href="https://github.com/mohammed-42/library-app" target="_blank" rel="noopener">View code</a></div>
+</div></article>
+
+<article class="proj rv"><div class="num">04</div><div>
+<h3>AI Study Assistant</h3><div class="kind">RAG study app for students</div>
+<p>Upload PDFs and photos of handwritten notes, then ask questions and get answers with real citations (document and page).</p>
+<ul><li>Generates notes and quizzes from your material and helps you follow a study plan.</li>
+<li>Gemini handles transcription, embeddings and Q&amp;A; pgvector powers retrieval; Supabase handles auth with JWT verification.</li></ul>
+<div class="chips"><span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind</span><span>FastAPI</span><span>PostgreSQL</span><span>pgvector</span><span>Gemini</span><span>Supabase</span></div>
+<div class="links"><!-- <a class="live" href="PASTE-LIVE-URL" target="_blank" rel="noopener">Live demo ↗</a> --><a href="https://github.com/mohammed-42/ai-study-assistant" target="_blank" rel="noopener">View code</a></div>
+</div></article>
+
+<article class="proj rv"><div class="num">05</div><div>
+<h3>AI Resume Builder</h3><div class="kind">Full-stack web app</div>
+<p>Turns raw career details into a polished, downloadable resume.</p>
+<ul><li>Gemini returns structured JSON (summary, skills, experience, education), rendered into an HTML template.</li>
+<li>One-click PDF export with Puppeteer; resume data stored in MongoDB.</li></ul>
+<div class="chips"><span>React</span><span>Tailwind CSS</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Gemini API</span><span>Puppeteer</span></div>
+<div class="links"><!-- <a class="live" href="PASTE-LIVE-URL" target="_blank" rel="noopener">Live demo ↗</a> --><a href="https://github.com/mohammed-42/ai-resume-builder" target="_blank" rel="noopener">View code</a></div>
+</div></article>
+
+</div></div></section>
+
+<section id="skills"><div class="wrap rv">
+<div class="eyebrow">Toolbox</div><h2>Skills</h2>
+<div class="skills">
+<div class="sk"><h3>Frontend</h3><div><span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind CSS</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div></div>
+<div class="sk"><h3>Backend</h3><div><span>Node.js</span><span>Express</span><span>FastAPI</span><span>REST APIs</span><span>JWT auth</span><span>Microservices</span></div></div>
+<div class="sk"><h3>Databases</h3><div><span>PostgreSQL</span><span>Prisma</span><span>MongoDB</span><span>Mongoose</span><span>pgvector</span></div></div>
+<div class="sk"><h3>Tools &amp; AI</h3><div><span>Git &amp; GitHub</span><span>Docker</span><span>Postman</span><span>Gemini API</span><span>Cloudinary</span></div></div>
+</div></div></section>
+
+<section id="about" class="alt"><div class="wrap rv">
+<div class="eyebrow">About</div><h2>Experience &amp; education</h2>
+<div class="two">
+<div class="box"><h3>Full Stack Developer Intern</h3><small>Accolade Tech Solutions · May 2026</small>
+<ul><li>Built front-end and back-end features for a JavaScript web application under senior developers.</li><li>Built a Library App with REST APIs and microservices, deployed with Docker.</li><li>Debugged issues and tested APIs with Postman.</li></ul></div>
+<div class="box"><h3>B.Tech, Computer Science and Engineering</h3><small>Expected March 2027 · CGPA 8.28/10</small>
+<p>Srinivas University Institute of Engineering and Technology, Karnataka.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap rv"><div class="contact">
+<h2>Let's work together</h2>
+<p>I'm looking for internship and full-time opportunities. Drop me a message and I'll reply soon.</p>
+<a class="btn p" href="mailto:mohammedmustafa5156@gmail.com">Email me</a><a class="btn" href="https://linkedin.com/in/mohammedmustafa12" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/mohammed-42" target="_blank" rel="noopener">GitHub</a>
+</div></div></section>
+
+<footer>© <span id="y"></span> Mohammed Mustafa · Bengaluru, India</footer>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+var els=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1});els.forEach(function(el){io.observe(el)})}else{els.forEach(function(el){el.classList.add('in')})}
+</script>
+</body>
+</html>
